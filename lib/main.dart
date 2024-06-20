@@ -16,6 +16,7 @@ class MyApp extends StatelessWidget {
           seedColor: const Colors.fromARGB(255, 46, 0, 127)),
         useMaterial3: true,
       ),
+      home: const ListUser(),
     );
   }
 }
