@@ -1,16 +1,16 @@
-import 'package:myapp/user.dart';
+import 'package:tugaskelompok5/user.dart';
 import 'package:flutter/material.dart';
 
 class UserDetailPage extends StatelessWidget {
   final User user;
 
-  const UserDetailPage({Key? key, required this.user}) : super(key: key);
+  const UserDetailPage({super.key, required this.user});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("User Detail Page"),
+        title: const Text("User Detail Page"),
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
@@ -26,13 +26,13 @@ class UserDetailPage extends StatelessWidget {
             //   foregroundImage: NetworkImage(user.avatar),
             //   radius: 80,
             // ),
-            SizedBox(height: 16),
+            const SizedBox(height: 16),
             Text(
               '${user.firstName} ${user.lastName}',
               textAlign: TextAlign.center,
               style: TextStyle(fontSize: 24),
             ),
-            SizedBox(height: 8),
+            const SizedBox(height: 8),
             Text(
               user.email,
               textAlign: TextAlign.center,
